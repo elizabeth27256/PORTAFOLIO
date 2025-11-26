@@ -1,3 +1,97 @@
+/* ======== FONDO GENERAL ======== */
 body {
-    background: red !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #7b4bff, #a87bff, #d5c4ff);
+    color: #222;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== CONTENEDOR CENTRAL ======== */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ======== ENCABEZADO ======== */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.header p {
+    color: #f0eaff;
+    font-weight: 500;
+}
+
+/* ======== SECCIONES ======== */
+.section {
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.section h2 {
+    color: #2e00ff;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* ======== PROYECTOS ======== */
+.proyecto {
+    background: rgba(255,255,255,0.55);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border-left: 6px solid #2e00ff;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.proyecto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+/* ======== LINKS ======== */
+a {
+    color: #4400ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0008ff;
+}
+
+/* ======== FOOTER ======== */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
 }
